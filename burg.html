@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #FFCA69;
+        }
+        video {
+            display: block;
+            margin: 0 auto;
+            width: 60%;
+            
+        }
+
+        img{
+            width: 300px;
+            position: absolute;
+            top: 50%;
+            left: 60%;
+        }
+        img:hover{
+            width: 280px;
+        }
+
+        @media (max-width: 500px){
+            video {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            
+        }
+
+        img{
+            width: 100px;
+            position: absolute;
+            top: 15%;
+            left: 65%;
+        }
+        img:hover{
+            width: 80px;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="" id="demo">
+            <video src="./burgue.mp4"></video>
+            <div id="btn" onclick="playPause()"><img src="./Symbol 10002.png" alt=""></div>
+        </div>
+    </div>
+    <script>
+        function playPause() {
+
+            var video = document.querySelector("video");
+            if (video.paused)
+                video.play();
+            else
+                video.pause();
+
+        }
+    </script>
+</body>
+
+</html>
